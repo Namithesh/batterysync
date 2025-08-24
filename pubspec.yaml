@@ -1,0 +1,33 @@
+name: batterysync
+description: A multi-platform battery monitoring app.
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  battery_plus: ^5.0.3
+  http: ^1.1.0
+
+  # For creating a simple web server on each device
+  shelf: ^1.4.1
+  shelf_router: ^1.1.4
+
+  # To get the local IP address of the device
+  network_info_plus: ^5.0.3
+
+  cupertino_icons: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
